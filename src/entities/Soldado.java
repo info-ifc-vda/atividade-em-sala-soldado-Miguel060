@@ -39,7 +39,7 @@ public class Soldado {
         System.out.println("\nSoldado "+getNome()+ " movido para a posição "+ getMovimento());
     }
     public void atacar(String arma){
-        if(Soldado.quantidadeSoldados >= 10){
+        if(Soldado.quantidadeSoldados >= 3){
             this.arma = arma;
             System.out.println("O soldado "+getNome()+" atacou com "+getArma());
         }else{
@@ -47,7 +47,7 @@ public class Soldado {
         }
     }
     public void atacar(){
-        if(Soldado.quantidadeSoldados >= 10){
+        if(Soldado.quantidadeSoldados >= 3){
                 System.out.println("O soldado "+getNome()+" atacou com o fuzil");
         }else{
             System.out.println("Ainda não! Espere!");
